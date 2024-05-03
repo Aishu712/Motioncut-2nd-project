@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pluck&Play</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="page1">
+    <div id="top">
+      <h2>Pluck-<span id="and">&</span>-Play</h2>
+      <h3>~Guitar Classes</h3>
+    </div>
+    <div id="bottom">
+      <div id="content">
+        <h1>Discover the joy of playing guitar in our comprehensive group lessons.</h1>
+        <h2>Beginners Welcome!</h2>
+        <div id="buttons">
+          <a href="#Register"><button id="reg">I'm in!</button></a>
+        </div>
+      </div>
+      <video autoplay loop muted>
+        <source src="https://cdn.dribbble.com/users/3029768/screenshots/15756871/media/5cd9a105096b573b1c29cb65fa261f87.mp4">
+      </video>
+    </div>
+
+  </div>
+  <div id="Register">
+    <div id="details">
+      <form onsubmit="alert('Details has been sent to your email,see you')">
+        <input type="text" placeholder="Fullname" required>
+        <input type="email" placeholder="E-mail" required>
+        <input list="city" placeholder="City" required>
+        <datalist id="city">
+          <option value="Amaravati">
+          <option value="Guntur">
+          <option value="Rajahmundry">
+          <option value="Vijayawada">
+          <option value="Visakhapatnam">
+          <option value="Vizianagaram"></option>
+        </datalist>
+        <input type="tel" placeholder="Phone number" maxlength="10" minlength="10" required>
+        <input type="password" placeholder="Password" minlength="8" required>
+        <input type="password" placeholder="Confirm Password" minlength="8" required>
+        <input type="submit"id="button" value="Register!" ></input>
+      </form>
+    </div>
+    
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
